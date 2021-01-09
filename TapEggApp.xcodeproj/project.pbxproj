@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7037353F258F26F400C327E6 /* TapEggAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037353E258F26F400C327E6 /* TapEggAppApp.swift */; };
+		70373541258F26F400C327E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70373540258F26F400C327E6 /* ContentView.swift */; };
+		70373543258F26F600C327E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70373542258F26F600C327E6 /* Assets.xcassets */; };
+		70373546258F26F600C327E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70373545258F26F600C327E6 /* Preview Assets.xcassets */; };
+		70373551258F26F700C327E6 /* TapEggAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70373550258F26F700C327E6 /* TapEggAppTests.swift */; };
+		7037355C258F26F700C327E6 /* TapEggAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037355B258F26F700C327E6 /* TapEggAppUITests.swift */; };
+		7037356D258F2AA500C327E6 /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037356C258F2AA500C327E6 /* CountView.swift */; };
+		70373572258F317D00C327E6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70373571258F317D00C327E6 /* Storyboard.storyboard */; };
+		705D635425A9DB8600BB15B9 /* saveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705D635325A9DB8600BB15B9 /* saveNumber.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7037354D258F26F700C327E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70373533258F26F300C327E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7037353A258F26F400C327E6;
+			remoteInfo = TapEggApp;
+		};
+		70373558258F26F700C327E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70373533258F26F300C327E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7037353A258F26F400C327E6;
+			remoteInfo = TapEggApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7037353B258F26F400C327E6 /* TapEggApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapEggApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7037353E258F26F400C327E6 /* TapEggAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapEggAppApp.swift; sourceTree = "<group>"; };
+		70373540258F26F400C327E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		70373542258F26F600C327E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70373545258F26F600C327E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70373547258F26F700C327E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7037354C258F26F700C327E6 /* TapEggAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapEggAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70373550258F26F700C327E6 /* TapEggAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapEggAppTests.swift; sourceTree = "<group>"; };
+		70373552258F26F700C327E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70373557258F26F700C327E6 /* TapEggAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapEggAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7037355B258F26F700C327E6 /* TapEggAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapEggAppUITests.swift; sourceTree = "<group>"; };
+		7037355D258F26F700C327E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7037356C258F2AA500C327E6 /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
+		70373571258F317D00C327E6 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		705D635325A9DB8600BB15B9 /* saveNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveNumber.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70373538258F26F400C327E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70373549258F26F700C327E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70373554258F26F700C327E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70373532258F26F300C327E6 = {
+			isa = PBXGroup;
+			children = (
+				7037353D258F26F400C327E6 /* TapEggApp */,
+				7037354F258F26F700C327E6 /* TapEggAppTests */,
+				7037355A258F26F700C327E6 /* TapEggAppUITests */,
+				7037353C258F26F400C327E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7037353C258F26F400C327E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7037353B258F26F400C327E6 /* TapEggApp.app */,
+				7037354C258F26F700C327E6 /* TapEggAppTests.xctest */,
+				70373557258F26F700C327E6 /* TapEggAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7037353D258F26F400C327E6 /* TapEggApp */ = {
+			isa = PBXGroup;
+			children = (
+				7037353E258F26F400C327E6 /* TapEggAppApp.swift */,
+				70373540258F26F400C327E6 /* ContentView.swift */,
+				7037356C258F2AA500C327E6 /* CountView.swift */,
+				705D635325A9DB8600BB15B9 /* saveNumber.swift */,
+				70373542258F26F600C327E6 /* Assets.xcassets */,
+				70373547258F26F700C327E6 /* Info.plist */,
+				70373571258F317D00C327E6 /* Storyboard.storyboard */,
+				70373544258F26F600C327E6 /* Preview Content */,
+			);
+			path = TapEggApp;
+			sourceTree = "<group>";
+		};
+		70373544258F26F600C327E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				70373545258F26F600C327E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7037354F258F26F700C327E6 /* TapEggAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				70373550258F26F700C327E6 /* TapEggAppTests.swift */,
+				70373552258F26F700C327E6 /* Info.plist */,
+			);
+			path = TapEggAppTests;
+			sourceTree = "<group>";
+		};
+		7037355A258F26F700C327E6 /* TapEggAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7037355B258F26F700C327E6 /* TapEggAppUITests.swift */,
+				7037355D258F26F700C327E6 /* Info.plist */,
+			);
+			path = TapEggAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7037353A258F26F400C327E6 /* TapEggApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70373560258F26F700C327E6 /* Build configuration list for PBXNativeTarget "TapEggApp" */;
+			buildPhases = (
+				70373537258F26F400C327E6 /* Sources */,
+				70373538258F26F400C327E6 /* Frameworks */,
+				70373539258F26F400C327E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapEggApp;
+			productName = TapEggApp;
+			productReference = 7037353B258F26F400C327E6 /* TapEggApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7037354B258F26F700C327E6 /* TapEggAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70373563258F26F700C327E6 /* Build configuration list for PBXNativeTarget "TapEggAppTests" */;
+			buildPhases = (
+				70373548258F26F700C327E6 /* Sources */,
+				70373549258F26F700C327E6 /* Frameworks */,
+				7037354A258F26F700C327E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7037354E258F26F700C327E6 /* PBXTargetDependency */,
+			);
+			name = TapEggAppTests;
+			productName = TapEggAppTests;
+			productReference = 7037354C258F26F700C327E6 /* TapEggAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70373556258F26F700C327E6 /* TapEggAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70373566258F26F700C327E6 /* Build configuration list for PBXNativeTarget "TapEggAppUITests" */;
+			buildPhases = (
+				70373553258F26F700C327E6 /* Sources */,
+				70373554258F26F700C327E6 /* Frameworks */,
+				70373555258F26F700C327E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70373559258F26F700C327E6 /* PBXTargetDependency */,
+			);
+			name = TapEggAppUITests;
+			productName = TapEggAppUITests;
+			productReference = 70373557258F26F700C327E6 /* TapEggAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70373533258F26F300C327E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7037353A258F26F400C327E6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7037354B258F26F700C327E6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 7037353A258F26F400C327E6;
+					};
+					70373556258F26F700C327E6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 7037353A258F26F400C327E6;
+					};
+				};
+			};
+			buildConfigurationList = 70373536258F26F300C327E6 /* Build configuration list for PBXProject "TapEggApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70373532258F26F300C327E6;
+			productRefGroup = 7037353C258F26F400C327E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7037353A258F26F400C327E6 /* TapEggApp */,
+				7037354B258F26F700C327E6 /* TapEggAppTests */,
+				70373556258F26F700C327E6 /* TapEggAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70373539258F26F400C327E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70373546258F26F600C327E6 /* Preview Assets.xcassets in Resources */,
+				70373543258F26F600C327E6 /* Assets.xcassets in Resources */,
+				70373572258F317D00C327E6 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7037354A258F26F700C327E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70373555258F26F700C327E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70373537258F26F400C327E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70373541258F26F400C327E6 /* ContentView.swift in Sources */,
+				7037353F258F26F400C327E6 /* TapEggAppApp.swift in Sources */,
+				7037356D258F2AA500C327E6 /* CountView.swift in Sources */,
+				705D635425A9DB8600BB15B9 /* saveNumber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70373548258F26F700C327E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70373551258F26F700C327E6 /* TapEggAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70373553258F26F700C327E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7037355C258F26F700C327E6 /* TapEggAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7037354E258F26F700C327E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7037353A258F26F400C327E6 /* TapEggApp */;
+			targetProxy = 7037354D258F26F700C327E6 /* PBXContainerItemProxy */;
+		};
+		70373559258F26F700C327E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7037353A258F26F400C327E6 /* TapEggApp */;
+			targetProxy = 70373558258F26F700C327E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7037355E258F26F700C327E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7037355F258F26F700C327E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70373561258F26F700C327E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TapEggApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YHHB923T8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TapEggApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedealTniken.TapEggApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70373562258F26F700C327E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TapEggApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YHHB923T8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TapEggApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedealTniken.TapEggApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70373564258F26F700C327E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHHB923T8B;
+				INFOPLIST_FILE = TapEggAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedealTniken.TapEggAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapEggApp.app/TapEggApp";
+			};
+			name = Debug;
+		};
+		70373565258F26F700C327E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHHB923T8B;
+				INFOPLIST_FILE = TapEggAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedealTniken.TapEggAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapEggApp.app/TapEggApp";
+			};
+			name = Release;
+		};
+		70373567258F26F700C327E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHHB923T8B;
+				INFOPLIST_FILE = TapEggAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedealTniken.TapEggAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapEggApp;
+			};
+			name = Debug;
+		};
+		70373568258F26F700C327E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHHB923T8B;
+				INFOPLIST_FILE = TapEggAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedealTniken.TapEggAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapEggApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70373536258F26F300C327E6 /* Build configuration list for PBXProject "TapEggApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7037355E258F26F700C327E6 /* Debug */,
+				7037355F258F26F700C327E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70373560258F26F700C327E6 /* Build configuration list for PBXNativeTarget "TapEggApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70373561258F26F700C327E6 /* Debug */,
+				70373562258F26F700C327E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70373563258F26F700C327E6 /* Build configuration list for PBXNativeTarget "TapEggAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70373564258F26F700C327E6 /* Debug */,
+				70373565258F26F700C327E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70373566258F26F700C327E6 /* Build configuration list for PBXNativeTarget "TapEggAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70373567258F26F700C327E6 /* Debug */,
+				70373568258F26F700C327E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70373533258F26F300C327E6 /* Project object */;
+}
