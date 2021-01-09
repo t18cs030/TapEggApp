@@ -44,7 +44,7 @@ struct CountView: View {
                                        height: 300,
                                        alignment: .center)}
                         ).frame(maxWidth: .infinity,
-                               maxHeight: 450,
+                               maxHeight: 400,
                                alignment: .center)
                     Spacer()
                 }
