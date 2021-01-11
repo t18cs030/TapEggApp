@@ -55,18 +55,37 @@ struct CountView: View {
                         .foregroundColor(.black)
                         .background(Color.white.opacity(0.9))
                     Button(action:
-                            {num.num -= 1;},
+                            {
+                                num.num -= 1;
+                                if(num.num <= 99970)
+                                    {num.addFinishCount()}
+                            },
                            label:
                             {
                                 updateImage(number:num.num)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 200,
-                                       height: 300,
-                                       alignment: .center)}
-                        ).frame(maxWidth: .infinity,
-                               maxHeight: 400,
-                               alignment: .center)
+                                       height: 350,
+                                       alignment: .center)
+                                .padding()
+                            }
+                    )
+                    if(num.finishCount>0){
+                        HStack{
+                            Spacer()
+                            Image("hiyoko")
+                                .resizable()
+                                .scaledToFit()
+                            Text("* \(num.finishCount)")
+                                .padding()
+                        }.frame(width:.infinity,
+                                height: 100,
+                                alignment:.trailing)
+                    }
+                    Button(action: {}){
+                        Text("Button")
+                    }.buttonStyle(CustomButtonStyle())
                     Spacer()
                 }
             }
