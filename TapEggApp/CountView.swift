@@ -4,6 +4,11 @@
 //
 //  Created by kenta tanii on 2020/12/20.
 //
+/* タップで画像を更新するには？
+ *  ZStackでボタンを画像を重ねる->.onTapで画像を更新
+ *　カスタムボタンスタイルで更新
+        ->この方法では、もしかしたらlabelの部分は更新できないかも
+*/
 
 import SwiftUI
 
@@ -50,7 +55,8 @@ struct CountView: View {
                     Text("\(num.num)")
                         .multilineTextAlignment(.center)
                         .padding()
-                        .font(.largeTitle)
+                        //.font(.system(size:80,design:.rounded))
+                        .font(.custom("Thonburi", fixedSize: 60))
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.black)
                         .background(Color.white.opacity(0.9))
