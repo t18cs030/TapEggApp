@@ -22,7 +22,7 @@ class saveNumber: ObservableObject{
     init() {
         UserDefaults.standard.register(defaults: ["num":100000,"hiyokoCount":0])
         num = UserDefaults.standard.integer(forKey: "num")
-        hiyokoCount = UserDefaults.standard.integer(forKey: "finishCount")
+        hiyokoCount = UserDefaults.standard.integer(forKey: "hiyokoCount")
     }
     public func reset(){
         num = 100000

@@ -70,7 +70,7 @@ struct CountView: View {
                     }.padding()
                     Text("\(num.num)")
                         .multilineTextAlignment(.center)
-                        .font(.custom("Avenir-medium", fixedSize: 75))
+                        .font(.custom("Avenir-medium", fixedSize: 60))
                         .padding()
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.black)
@@ -92,7 +92,7 @@ struct CountView: View {
                                 .scaledToFit()
                                 .padding()
                     }.frame(width: 400,
-                            height: 200,
+                            height: 225,
                             alignment: .center)
                     if(num.hiyokoCount>0){
                         HStack{
@@ -105,6 +105,7 @@ struct CountView: View {
                         }.frame(height: 100)
                     }
                     Spacer()
+                    Spacer()
                 }
             }
         }
@@ -114,7 +115,9 @@ struct CountView: View {
 struct CountView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            CountView()
+            CountView().previewDevice("iPhone 8")
+            CountView().previewDevice("iPhone 11")
+            CountView().previewDevice("iPhone 12")
         }
     }
 }
