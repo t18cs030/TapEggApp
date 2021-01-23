@@ -14,9 +14,15 @@ class updateList: ObservableObject{
             UserDefaults.standard.set(changeList,forKey: "chengeList")
         }
     }
+    @Published var finishList:[Int]{
+        didSet{
+            UserDefaults.standard.set(finishList,forKey: "finishList")
+        }
+    }
     init(){
         let originList = [10,50,50,60,60,70,70,80]
         changeList = [100000]
+        finishList = [0]
 
         var sum = 100000;
         var index = 0;
@@ -27,6 +33,12 @@ class updateList: ObservableObject{
             sum -= originList[i]*max
             index += 1
         }
+        for i in stride(from: 6, to: changeList.count, by: 8){
+            finishList.append(changeList[i])
+        }
+    }
+    func isFinish(number:Int)->Bool{
+        return finishList.contains(number);
     }
     func getIndex(number:Int)->Int{
         if(number < 0){return -1;}

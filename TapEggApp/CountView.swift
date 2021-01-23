@@ -17,36 +17,29 @@ struct CountView: View {
     @ObservedObject var updateImageList = updateList()
     @State private var resetingAlert = false
     @State var finishFlag = false
-    @State var apple = [0,0]
 
-    func setApple(){
-        for count in 0...10 {
-            apple.append(count)
-        }
-    }
     func updateImage(number:Int) -> Image{
-        if(number == 100000)
-        {return Image("Broken-Egg-0")}
-        else if(99990<=number && number<100000)
-        {return Image("Broken-Egg-1")}
-        else if(99950<=number && number<99990)
-        {return Image("Broken-Egg-2")}
-        else if(99900<=number && number<99950)
-        {return Image("Broken-Egg-3")}
-        else if(99840<=number && number<99900)
-        {return Image("Broken-Egg-4")}
-        else if(99780<=number && number<99840)
-        {return Image("Broken-Egg-5")}
-        else if(99710<=number && number<99780)
-        {return Image("Broken-Egg-6")}
-        else if(99640<=number && number<99710)
-        {return Image("Broken-Egg-fin")}
-        else
-        {return Image("Broken-Egg-0")}
-    }
-    func checkHiyoko(number:Int)->Bool{
-        if(number == 99850){return true;}
-        return false;
+        let index = updateImageList.getIndex(number: number)
+        switch(index){
+        case 0:
+            do {return Image("Broken-Egg-0")}
+        case 1:
+            do {return Image("Broken-Egg-1")}
+        case 2:
+            do {return Image("Broken-Egg-2")}
+        case 3:
+            do {return Image("Broken-Egg-3")}
+        case 4:
+            do {return Image("Broken-Egg-4")}
+        case 5:
+            do {return Image("Broken-Egg-5")}
+        case 6:
+            do {return Image("Broken-Egg-6")}
+        case 7:
+            do {return Image("Broken-Egg-fin")}
+        default:
+            do {return Image("Broken-Egg-0")}
+        }
     }
     var body: some View {
         ZStack{
@@ -71,24 +64,30 @@ struct CountView: View {
                             {
                                 Alert(title: Text("title"),
                                       message: Text("reset しますか？"),
-                                      primaryButton: .default(Text("ok"),
-                                                              action: {num.reset()}),
+                                      primaryButton:
+                                        .default(Text("ok"),
+                                                action: {
+                                                    num.reset()
+                                                        }),
                                       secondaryButton: .default(Text("cansel")))
                             }
                     }.padding()
                     Text("\(num.num)")
                         .multilineTextAlignment(.center)
                         .padding()
-                        //.font(.system(size:80,design:.rounded))
                         .font(.custom("Avenir-medium", fixedSize: 75))
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.black)
                         .background(Color.white.opacity(0.8))
                     Button(action:
                             {
-                                num.num -= 1;
-                                if(checkHiyoko(number: num.num))
-                                    {num.addFinishCount()}
+                                //表示している数値を１減らす
+                                if(num.num > 0){num.num -= 1}
+                                //負の値の処理
+                                else{num.num = 0}
+                                // hiyokoの生まれた数をカウント
+                                if(updateImageList.isFinish(number: num.num)){
+                                    num.addHiyokoCount()}
                             }
                         )
                         {
@@ -100,23 +99,17 @@ struct CountView: View {
                                        alignment: .center)
                                 .padding()
                     }
-                    if(num.finishCount>0){
+                    if(num.hiyokoCount>0){
                         HStack{
                             Spacer()
                             Image("hiyoko")
                                 .resizable()
                                 .scaledToFit()
-                            Text("* \(num.finishCount)")
+                            Text("* \(num.hiyokoCount)")
                                 .padding()
                         }.frame(width:.infinity,
                                 height: 100,
                                 alignment:.trailing)
-                    }
-                    Button(action: {self.setApple()}){
-                        Text("Button")
-                    }.buttonStyle(CustomButtonStyle())
-                    List(apple, id:\.self){apples in
-                        Text("\(apples)")
                     }
                     Spacer()
                 }
