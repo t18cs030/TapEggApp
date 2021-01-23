@@ -22,7 +22,7 @@ struct ContentView: View {
                     VStack{
                         HStack{
                             Spacer()
-                            Text("たまごのアプリ")
+                            Text("Tap Egg App")
                                 .padding()
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
@@ -30,8 +30,8 @@ struct ContentView: View {
                         }
                         Spacer()
                         Button(action:{self.isStart.toggle()}){
-                            Text("スタート")
-                                .font(.title)
+                            Text("start")
+                                .font(.largeTitle)
                                 .fontWeight(.regular)
                                 .foregroundColor(.white)
                         }.padding()

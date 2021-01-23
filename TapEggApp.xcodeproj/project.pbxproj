@@ -16,6 +16,7 @@
 		7037356D258F2AA500C327E6 /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037356C258F2AA500C327E6 /* CountView.swift */; };
 		70373572258F317D00C327E6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70373571258F317D00C327E6 /* Storyboard.storyboard */; };
 		7055535C25BB0F5F00E9A795 /* updateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7055535B25BB0F5F00E9A795 /* updateImage.swift */; };
+		7059A98C25BC200A0043BBDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7059A98B25BC200A0043BBDA /* Localizable.strings */; };
 		705D635425A9DB8600BB15B9 /* saveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705D635325A9DB8600BB15B9 /* saveNumber.swift */; };
 		7078606D25AC3122008E8748 /* CustomButtonStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078606C25AC3122008E8748 /* CustomButtonStyle1.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		70373571258F317D00C327E6 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7055535B25BB0F5F00E9A795 /* updateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateImage.swift; sourceTree = "<group>"; };
 		7055578825BBBB9E00BAEE9B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7059A98B25BC200A0043BBDA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		705D635325A9DB8600BB15B9 /* saveNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveNumber.swift; sourceTree = "<group>"; };
 		7078606C25AC3122008E8748 /* CustomButtonStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				70373542258F26F600C327E6 /* Assets.xcassets */,
 				70373547258F26F700C327E6 /* Info.plist */,
 				70373571258F317D00C327E6 /* Storyboard.storyboard */,
+				7059A98B25BC200A0043BBDA /* Localizable.strings */,
 				70373544258F26F600C327E6 /* Preview Content */,
 			);
 			path = TapEggApp;
@@ -232,6 +235,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 70373532258F26F300C327E6;
 			productRefGroup = 7037353C258F26F400C327E6 /* Products */;
@@ -251,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70373546258F26F600C327E6 /* Preview Assets.xcassets in Resources */,
+				7059A98C25BC200A0043BBDA /* Localizable.strings in Resources */,
 				70373543258F26F600C327E6 /* Assets.xcassets in Resources */,
 				70373572258F317D00C327E6 /* Storyboard.storyboard in Resources */,
 			);

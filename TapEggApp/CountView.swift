@@ -62,10 +62,12 @@ struct CountView: View {
                             })
                             .alert(isPresented: $resetingAlert)
                             {
-                                Alert(title: Text("title"),
-                                      message: Text("reset しますか？"),
+                                Alert(title: Text("Do you want to reset it?"),
                                       primaryButton:
-                                        .default(Text("ok"),action:{num.reset()}),secondaryButton: .default(Text("cansel")))
+                                        .default(Text("no")),
+                                      secondaryButton:
+                                        .default(Text("yes"),
+                                                 action:{num.reset()}))
                             }
                     }.padding()
                     Text("\(num.num)")
