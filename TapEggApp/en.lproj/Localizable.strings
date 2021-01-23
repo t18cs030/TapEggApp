@@ -1,0 +1,13 @@
+/*
+  Localizable.strings
+  TapEggApp
+
+  Created by kenta tanii on 2021/01/23.
+  
+*/
+CFBundleDisplayName = "Tap Egg App";
+"start" = "スタート";
+"Tap Egg App" = "たまごのアプリ";
+"Do you want to reset it?" = "リセットしますか？";
+"no" = "いいえ";
+"yes" = "はい";

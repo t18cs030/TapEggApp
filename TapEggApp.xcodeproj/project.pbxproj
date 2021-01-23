@@ -14,9 +14,10 @@
 		70373551258F26F700C327E6 /* TapEggAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70373550258F26F700C327E6 /* TapEggAppTests.swift */; };
 		7037355C258F26F700C327E6 /* TapEggAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037355B258F26F700C327E6 /* TapEggAppUITests.swift */; };
 		7037356D258F2AA500C327E6 /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037356C258F2AA500C327E6 /* CountView.swift */; };
-		70373572258F317D00C327E6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70373571258F317D00C327E6 /* Storyboard.storyboard */; };
 		7055535C25BB0F5F00E9A795 /* updateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7055535B25BB0F5F00E9A795 /* updateImage.swift */; };
-		7059A98C25BC200A0043BBDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7059A98B25BC200A0043BBDA /* Localizable.strings */; };
+		7059A99025BC207A0043BBDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7059A99225BC207A0043BBDA /* Localizable.strings */; };
+		7059A99725BC21730043BBDA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7059A99625BC21730043BBDA /* Storyboard.storyboard */; };
+		7059A9A925BC23C10043BBDA /* LocalizableEnglish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7059A9AB25BC23C10043BBDA /* LocalizableEnglish.strings */; };
 		705D635425A9DB8600BB15B9 /* saveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705D635325A9DB8600BB15B9 /* saveNumber.swift */; };
 		7078606D25AC3122008E8748 /* CustomButtonStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078606C25AC3122008E8748 /* CustomButtonStyle1.swift */; };
 /* End PBXBuildFile section */
@@ -52,10 +53,11 @@
 		7037355B258F26F700C327E6 /* TapEggAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapEggAppUITests.swift; sourceTree = "<group>"; };
 		7037355D258F26F700C327E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7037356C258F2AA500C327E6 /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
-		70373571258F317D00C327E6 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7055535B25BB0F5F00E9A795 /* updateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateImage.swift; sourceTree = "<group>"; };
 		7055578825BBBB9E00BAEE9B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7059A98B25BC200A0043BBDA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7059A99125BC207A0043BBDA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7059A99625BC21730043BBDA /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		7059A9AA25BC23C10043BBDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableEnglish.strings; sourceTree = "<group>"; };
 		705D635325A9DB8600BB15B9 /* saveNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveNumber.swift; sourceTree = "<group>"; };
 		7078606C25AC3122008E8748 /* CustomButtonStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,8 +119,9 @@
 				7055578825BBBB9E00BAEE9B /* MyPlayground.playground */,
 				70373542258F26F600C327E6 /* Assets.xcassets */,
 				70373547258F26F700C327E6 /* Info.plist */,
-				70373571258F317D00C327E6 /* Storyboard.storyboard */,
-				7059A98B25BC200A0043BBDA /* Localizable.strings */,
+				7059A99625BC21730043BBDA /* Storyboard.storyboard */,
+				7059A99225BC207A0043BBDA /* Localizable.strings */,
+				7059A9AB25BC23C10043BBDA /* LocalizableEnglish.strings */,
 				70373544258F26F600C327E6 /* Preview Content */,
 			);
 			path = TapEggApp;
@@ -255,9 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70373546258F26F600C327E6 /* Preview Assets.xcassets in Resources */,
-				7059A98C25BC200A0043BBDA /* Localizable.strings in Resources */,
+				7059A99725BC21730043BBDA /* Storyboard.storyboard in Resources */,
+				7059A99025BC207A0043BBDA /* Localizable.strings in Resources */,
 				70373543258F26F600C327E6 /* Assets.xcassets in Resources */,
-				70373572258F317D00C327E6 /* Storyboard.storyboard in Resources */,
+				7059A9A925BC23C10043BBDA /* LocalizableEnglish.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +325,25 @@
 			targetProxy = 70373558258F26F700C327E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7059A99225BC207A0043BBDA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7059A99125BC207A0043BBDA /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7059A9AB25BC23C10043BBDA /* LocalizableEnglish.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7059A9AA25BC23C10043BBDA /* en */,
+			);
+			name = LocalizableEnglish.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7037355E258F26F700C327E6 /* Debug */ = {

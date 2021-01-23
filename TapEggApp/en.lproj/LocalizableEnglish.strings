@@ -1,0 +1,13 @@
+/* 
+  LocalizableEnglish.strings
+  TapEggApp
+
+  Created by kenta tanii on 2021/01/23.
+  
+*/
+CFBundleDisplayName = "Tap Egg App";
+"start" = "start";
+"Tap Egg App" = "Tap Egg App";
+"Do you want to reset it?" = "Do you want to reset it";
+"no" = "no";
+"yes" = "yes";
