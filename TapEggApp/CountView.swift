@@ -65,24 +65,20 @@ struct CountView: View {
                                 Alert(title: Text("title"),
                                       message: Text("reset しますか？"),
                                       primaryButton:
-                                        .default(Text("ok"),
-                                                action: {
-                                                    num.reset()
-                                                        }),
-                                      secondaryButton: .default(Text("cansel")))
+                                        .default(Text("ok"),action:{num.reset()}),secondaryButton: .default(Text("cansel")))
                             }
                     }.padding()
                     Text("\(num.num)")
                         .multilineTextAlignment(.center)
-                        .padding()
                         .font(.custom("Avenir-medium", fixedSize: 75))
+                        .padding()
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.black)
                         .background(Color.white.opacity(0.8))
                     Button(action:
                             {
                                 //表示している数値を１減らす
-                                if(num.num > 0){num.num -= 1}
+                                if(num.num > 0){num.num -= 100}
                                 //負の値の処理
                                 else{num.num = 0}
                                 // hiyokoの生まれた数をカウント
@@ -91,14 +87,13 @@ struct CountView: View {
                             }
                         )
                         {
-                                updateImage(number:num.num)
+                            updateImage(number:num.num)
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 200,
-                                       height: 350,
-                                       alignment: .center)
                                 .padding()
-                    }
+                    }.frame(width: 400,
+                            height: 200,
+                            alignment: .center)
                     if(num.hiyokoCount>0){
                         HStack{
                             Spacer()
@@ -107,9 +102,7 @@ struct CountView: View {
                                 .scaledToFit()
                             Text("* \(num.hiyokoCount)")
                                 .padding()
-                        }.frame(width:.infinity,
-                                height: 100,
-                                alignment:.trailing)
+                        }.frame(height: 100)
                     }
                     Spacer()
                 }
@@ -120,6 +113,8 @@ struct CountView: View {
 
 struct CountView_Previews: PreviewProvider {
     static var previews: some View {
-        CountView()
+        Group{
+            CountView()
+        }
     }
 }

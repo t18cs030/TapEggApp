@@ -33,6 +33,8 @@ class updateList: ObservableObject{
             sum -= originList[i]*max
             index += 1
         }
+        changeList.append(0)
+        
         for i in stride(from: 6, to: changeList.count, by: 8){
             finishList.append(changeList[i])
         }

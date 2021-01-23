@@ -26,7 +26,6 @@ class saveNumber: ObservableObject{
     }
     public func reset(){
         num = 100000
-        hiyokoCount = 0
     }
     public func isFinish() -> Bool{
         if(num == 0){return true}
@@ -34,5 +33,8 @@ class saveNumber: ObservableObject{
     }
     public func addHiyokoCount(){
         hiyokoCount += 1;
+    }
+    public func setNum(n:Int){
+        num = n;
     }
 }
