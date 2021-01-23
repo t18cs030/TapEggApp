@@ -14,6 +14,7 @@ import SwiftUI
 
 struct CountView: View {
     @ObservedObject var num = saveNumber()
+    @ObservedObject var updateImageList = updateList()
     @State private var resetingAlert = false
     @State var finishFlag = false
     @State var apple = [0,0]
