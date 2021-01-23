@@ -14,25 +14,38 @@ import SwiftUI
 
 struct CountView: View {
     @ObservedObject var num = saveNumber()
+    @State private var resetingAlert = false
+    @State var finishFlag = false
+    @State var apple = [0,0]
+
+    func setApple(){
+        for count in 0...10 {
+            apple.append(count)
+        }
+    }
     func updateImage(number:Int) -> Image{
         if(number == 100000)
         {return Image("Broken-Egg-0")}
         else if(99990<=number && number<100000)
         {return Image("Broken-Egg-1")}
-        else if(99980<=number && number<99990)
+        else if(99950<=number && number<99990)
         {return Image("Broken-Egg-2")}
-        else if(99970<=number && number<99980)
+        else if(99900<=number && number<99950)
         {return Image("Broken-Egg-3")}
-        else if(99960<=number && number<99970)
+        else if(99840<=number && number<99900)
         {return Image("Broken-Egg-4")}
-        else if(99950<=number && number<99960)
+        else if(99780<=number && number<99840)
         {return Image("Broken-Egg-5")}
-        else if(99940<=number && number<99950)
+        else if(99710<=number && number<99780)
         {return Image("Broken-Egg-6")}
-        else if(99930<=number && number<99940)
+        else if(99640<=number && number<99710)
         {return Image("Broken-Egg-fin")}
         else
         {return Image("Broken-Egg-0")}
+    }
+    func checkHiyoko(number:Int)->Bool{
+        if(number == 99850){return true;}
+        return false;
     }
     var body: some View {
         ZStack{
@@ -44,30 +57,40 @@ struct CountView: View {
                     HStack{
                         Spacer()
                         Button(
-                            action: {num.reset()},
+                            action: {
+                                self.resetingAlert = true
+                            },
                             label: {
                             Text("Reset")
                                 .padding()
                                 .border(Color.black)
                                 .foregroundColor(Color.white)
                             })
+                            .alert(isPresented: $resetingAlert)
+                            {
+                                Alert(title: Text("title"),
+                                      message: Text("reset しますか？"),
+                                      primaryButton: .default(Text("ok"),
+                                                              action: {num.reset()}),
+                                      secondaryButton: .default(Text("cansel")))
+                            }
                     }.padding()
                     Text("\(num.num)")
                         .multilineTextAlignment(.center)
                         .padding()
                         //.font(.system(size:80,design:.rounded))
-                        .font(.custom("Thonburi", fixedSize: 60))
+                        .font(.custom("Avenir-medium", fixedSize: 75))
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.black)
-                        .background(Color.white.opacity(0.9))
+                        .background(Color.white.opacity(0.8))
                     Button(action:
                             {
                                 num.num -= 1;
-                                if(num.num <= 99970)
+                                if(checkHiyoko(number: num.num))
                                     {num.addFinishCount()}
-                            },
-                           label:
-                            {
+                            }
+                        )
+                        {
                                 updateImage(number:num.num)
                                 .resizable()
                                 .scaledToFit()
@@ -75,8 +98,7 @@ struct CountView: View {
                                        height: 350,
                                        alignment: .center)
                                 .padding()
-                            }
-                    )
+                    }
                     if(num.finishCount>0){
                         HStack{
                             Spacer()
@@ -89,9 +111,12 @@ struct CountView: View {
                                 height: 100,
                                 alignment:.trailing)
                     }
-                    Button(action: {}){
+                    Button(action: {self.setApple()}){
                         Text("Button")
                     }.buttonStyle(CustomButtonStyle())
+                    List(apple, id:\.self){apples in
+                        Text("\(apples)")
+                    }
                     Spacer()
                 }
             }
