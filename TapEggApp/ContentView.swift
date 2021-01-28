@@ -47,10 +47,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .previewDevice("iPhone 12")
                 .environment(\.locale, Locale(identifier: "en"))
             ContentView()
-                .previewDevice("iPhone 12")
                 .environment(\.locale, Locale(identifier: "ja"))
             
         }
