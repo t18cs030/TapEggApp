@@ -80,7 +80,7 @@ struct CountView: View {
                     Button(action:
                             {
                                 //表示している数値を１減らす
-                                if(num.num > 0){num.num -= 100}
+                                if(num.num > 0){num.num -= 1}
                                 //負の値の処理
                                 else{num.num = 0}
                                 // hiyokoの生まれた数をカウント
